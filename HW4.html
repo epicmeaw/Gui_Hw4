@@ -1,0 +1,61 @@
+<!--  Name: Zhu Lu  -->
+<!--  Email: Zhu_lu@student.uml.edu -->
+<!-- This is my html file in which i made a form and a header and some divs-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mult Table</title>
+      <!-- Adding Css-->
+    <link rel="stylesheet" href="./css/style.css">
+      <!-- adding boot strap-->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      <!--jq-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+   <link href=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <!-- Adding js-->
+   <script src="./javascript/calc.js"></script>
+   </head>
+<body>
+<div class="jumbotron">
+      <div class="col-md-12">
+         <h1 id="header"> MultTable</h1>
+   </div>
+</div>
+   <!--The form takes in a minValue max minrow max row and when then button is click the the function calc() will occur-->
+   <form id="myForm" onsubmit="return false">
+      <label for="minValue"> minValue</label> <br>
+      <input type="number" name="minValue" id="minValue" value="0"><br> 
+      <div id="slider"></div>
+      <label for="maxValue"> maxValue</label><br>
+      <input type="number" name="maxValue" id="maxValue" value="0"><br> 
+      <div id="slider2"></div>
+      <label for="minRowValue"> minRowValue</label><br>
+      <input type="number" name="minRowValue" id="minRowValue" value="0"><br> 
+      <div id="slider3"></div>
+      <label for="maxRowValue"> maxRowValue</label><br>
+      <input type="number" name="maxRowValue" id="maxRowValue" value="0"><br> 
+      <div id="slider4"></div>
+      <button type="submit" onclick="createTabs()">Save</button>
+   </form>
+   <!--This is where the table is being put in-->
+   <div id="result">
+   </div>
+   <!--This will make a button that deletes all the tabs-->
+   <button type="button" onclick="deleteAll()">DELETE ALL</button>
+   <div id="tabs">
+      <ul>
+      </ul>
+   </div>
+   
+
+</body>
+</html>

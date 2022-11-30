@@ -1,0 +1,128 @@
+/*  Name: Zhu Lu 
+    Email: Zhu_lu@student.uml.edu
+*/
+#slider,#slider2,#slider3,#slider4{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+#minValue-error,#maxValue-error,#minRowValue-error,#maxRowValue-error{
+    display: block;
+    margin-top: 10px;
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#myForm{
+    text-align: center;
+    border-style: groove;
+}
+/* This just changes the weight and size also added some animation */ 
+#header, h1{
+    font-size: 200%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    text-align: center;
+    animation-name: headerChange;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#error{
+margin: auto;
+font-weight: bold;
+color: red;
+text-align: center;
+}
+table td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    font-size: smaller;
+    font-weight: bolder;
+    animation-name: change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#result{
+margin: auto;
+width: 425px;
+height: 200px;
+overflow: auto;
+}
+/*Make each new tab with the width and height and scroll overflow*/
+#tabs>div{
+    margin: auto;
+    width: 425px;
+    height: 400px;
+    overflow: auto;
+    }
+tr:nth-child(n){
+    background-color: burlywood;
+    text-align: center;
+}
+td:nth-child(1){
+    position: sticky;
+    left: 0;
+    background-color: bisque;
+    text-align: center;
+}
+/* make the row sticky and change the background color*/
+tr:nth-child(1){
+    position: sticky;
+    top: 0;
+    background-color: bisque;
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+@keyframes change {
+    0% {
+        border: 5px solid red;
+    }
+
+    30% {
+        border: 5px solid blue;
+    }
+
+    60% {
+        border: 5px solid rosybrown;
+    }
+
+    90% {
+        border: 5px solid yellow;
+    }
+
+    100% {
+        border: 5px solid burlywood;
+    }
+}
+@keyframes headerChange {
+    0% {
+        color: aqua;
+        font-size: 100%;
+    }
+
+    30% {
+        color:blueviolet;
+    }
+    50%{
+        font-size: 200%;
+    }
+    60% {
+       color: chartreuse;
+    }
+
+    90% {
+       color: coral;
+    }
+
+    100% {
+        color: crimson;
+        font-size: 100%;
+    }
+}
